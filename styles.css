@@ -1,132 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200;300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* div {
+.wrapper {
+  display: flex;
+  gap: 15px;
+}
+.item {
   height: 55px;
   width: 55px;
-  background-color: blueviolet;
-  margin: 15rem 0px 0px 15rem;
-  animation-name: square;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  position: absolute;
+  background-color: red;
 }
-@keyframes square {
-  0% {
-    top: 0;
-    left: 0;
+
+@media (max-width: 570px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 55px;
+    margin-left: 7rem;
   }
-  25% {
-    top: 0;
-    left: 25rem;
+  .item {
+    height: 105px;
+    width: 255px;
     background-color: green;
   }
-  50% {
-    top: 25rem;
-    left: 25rem;
-    background-color: brown;
-  }
-  75% {
-    top: 25rem;
-    left: 0;
-    background-color: aquamarine;
-  }
-  100% {
-    top: 0;
-    left: 0;
-    background-color: beige;
-  }
-} */
-/* p {
-  height: 55px;
-  width: 55px;
-  background-color: blueviolet;
-  margin: 15rem 0px 0px 15rem;
-  animation-name: bounce;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  position: absolute; */
-/* opacity: 0; */
-/* border-radius: 50px; */
-/* } */
-/* @keyframes bounce {
-  0% {
-    transform: translateY(500px) rotate(230deg);
-  }
-  25% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translate(0);
-  }
-  75% {
-    transform: translate(0);
-  }
-  85% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(0);
-  }
-} */
-
-.Wrapper {
-  background-color: grey;
-  position: relative;
-  height: 7rem;
-  width: 19rem;
-  margin: 19rem 0 0 23rem;
-}
-.Wrapper input {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid;
-  height: 38px;
-  width: 237px;
-  padding: 20px;
-}
-.Wrapper label {
-  color: brown;
-  position: absolute;
-  top: 27px;
-  left: 21px;
-  pointer-events: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-}
-/* .Wrapper label:hover {
-  cursor: pointer;
-  transform: translateY(-15px);
-  transition: all 0.3s ease-in;
-  font-size: 11px;
-} */
-.Wrapper input:focus ~ label,
-.Wrapper input:valid ~ label {
-  transform: translateY(-15px);
-  transition: all 0.3s ease-in;
-  font-size: 11px;
-}
-.underline {
-  position: absolute;
-  height: 2px;
-  width: 0px;
-  top: 53px;
-  left: 15px;
-  background-color: red;
-  transition: all 0.3s;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-.Wrapper input:focus ~ .underline {
-  width: 237px;
-  transform: scaleX(1);
 }
