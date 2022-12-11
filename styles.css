@@ -4,5 +4,103 @@
   padding: 0;
   box-sizing: border-box;
 }
-div {
+.wrapper {
+  background-color: red;
+  height: 55px;
+  /* width: 55px; */
+  /* margin-left: 5rem; */
+  position: relative;
+  opacity: 1;
+
+  display: block;
 }
+.condition {
+  display: none;
+}
+.condition-1 {
+  display: block;
+}
+/* @keyframes zucking {
+  0% {
+    transform: 0;
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+} */
+.sub-item {
+  position: absolute;
+  top: 15px;
+  left: 40rem;
+  height: 28px;
+  width: 276px;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid brown;
+}
+.sub-item-2 {
+  position: absolute;
+  left: 57rem;
+  top: 15px;
+  height: 31px;
+  font-size: 57px;
+  color: white;
+}
+/*div {
+  height: 55px;
+  width: 55px;
+  background-color: blue;
+  margin-left: 105rem;
+ 
+  /* animation-iteration-count: infinite; 
+ 
+}
+*/
+@keyframes rolling {
+  0% {
+    transform: translateX(515px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: 0;
+    opacity: 1;
+  }
+}
+.input {
+  position: absolute;
+  left: -157px;
+  /* display: block; */
+  animation-name: rolling;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  transition: all 6.3s;
+}
+.search {
+  position: absolute;
+  left: 48rem;
+  top: 5px;
+  height: 43px;
+  font-size: 36px;
+  color: white;
+  animation-name: balling;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  transition: all 6.3s;
+}
+
+.search:hover,.sub-item-2:hover {
+  cursor: pointer;
+}
+@keyframes balling {
+  0% {
+    transform: translatey(215px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: 0;
+    opacity: 1;
+  }
+  
