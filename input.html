@@ -19,20 +19,33 @@
   </head>
   <body>
     <nav>
-       <div class="Wrapper none">
-            <span>Home</span>
-            <ion-icon class="Close" onclick="remove()" name="close-outline"></ion-icon>
-            <div>About</div>
-            <div>Contact Us</div>
-            <div>Value</div>
-            <div>Item</div>
-            <div>Input</div>
-       </div>
+       <ul class="Wrapper">
+        <div class="wrapper-item">
+           <ion-icon class="Close" onclick="remove()" name="close-outline"></ion-icon>
+           <span class="flex">
+            <li class="list-item">
+              <span class="toggle" onclick="toggle()">
+              <a href="">Home</a>
+              <ion-icon class="down-icon" name="chevron-down-outline"></ion-icon>
+            </span>
+              <ul class="itemvalue none">
+                <li class="item-1">Item 1</li>
+                <li class="item-1">Item 2</li>
+              </ul>                
+            </li>
+            <li class="list-item">About</li>
+            <li class="list-item">Contact Us</li>
+            <li class="list-item">Value</li>
+            <li class="list-item">Item</li>
+            <li class="list-item">Input</li>
+          </span>
+       </ul>
       <span class="item">
         <ion-icon class="Menu" onclick="clicevent()"  name="reorder-three-outline"></ion-icon>
           </ion-icon>
          
         </span>
+      </div>
     </div>
    
    
