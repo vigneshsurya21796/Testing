@@ -100,3 +100,25 @@
 .home-wrapper {
   margin-top: 15px;
 }
+.check {
+  position: relative;
+  font-size: 5rem;
+  margin-left: 15px;
+}
+.check::after {
+  content: '';
+  position: absolute;
+  background-color: blueviolet;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1rem;
+  top: 7rem;
+  left: 0px;
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+.check:hover:after {
+  transform: scaleX(1);
+  /* width: 100%; */
+  /* transform: translateX(15px); */
+}
