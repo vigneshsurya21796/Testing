@@ -133,11 +133,11 @@
 .item1 {
   height: 50px;
   width: 50px;
-  background-color: green;
+  background-color: brown;
 }
 .item2 {
   flex: 0.99;
   height: 50px;
   width: 50px;
-  background-color: green;
+  background-color: brown;
 }
